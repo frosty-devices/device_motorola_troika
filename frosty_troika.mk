@@ -12,11 +12,11 @@ $(call inherit-product, device/motorola/troika/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 ## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/frosty/config/common_full_phone.mk)
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := troika
-PRODUCT_NAME := lineage_troika
+PRODUCT_NAME := frosty_troika
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola one action
 PRODUCT_MANUFACTURER := motorola
@@ -28,3 +28,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="troika-user 11 RSBS31.Q1-48-36-23 ef3cf release-keys" \
     BuildFingerprint=motorola/troika_retail/troika_sprout:11/RSBS31.Q1-48-36-23/ef3cf:user/release-keys \
     DeviceName=troika
+
+# Frosty Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="SirRGB"

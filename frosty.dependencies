@@ -1,0 +1,11 @@
+[
+    {
+        "repository": "TheMuppets/proprietary_vendor_motorola_troika",
+        "target_path": "vendor/motorola/troika",
+        "branch": "lineage-23.2"
+    },
+    {
+        "repository": "frosty-devices/device_motorola_exynos9610-common",
+        "target_path": "device/motorola/exynos9610-common"
+    }
+]
